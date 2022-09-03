@@ -80,7 +80,7 @@ justify-content: center;
 }
 
 .form {
-    width: 280px;
+    width: 75%;
     padding: 50px 0;
     border-radius: 10px;
 }
@@ -102,7 +102,7 @@ justify-content: center;
     /* border: 2px solid #f8f8fb;
     background-color: white;
     color: #293041; */
-    width: 102%;
+    width: 80%;
     outline: none;
     margin-top: 5px;
     border-radius: 0.25rem;
@@ -133,11 +133,12 @@ justify-content: center;
 .bg-image {
     background-image: url(./Images/mobile-removebg.png);
     background-size: cover;
-    width: 368px;
-    height: 736px;
+    width: 20.7%;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .llogin-wrap {
