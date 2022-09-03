@@ -1,7 +1,7 @@
 Login page 
 Menu and sub menus
 1.Dashboard
-2.git
+2.Category
 3.Products
 4.Billing
 . New Bill
@@ -13,14 +13,15 @@ Menu and sub menus
 6.HRM
 .Employees
 .Jobs
-7.Organisation
+7.Delivery
+8.Organisation
 .Compnay details
-8.Report
+9.Report
 .Attendance
 .Salary
 .Sales 
 .Transaction
 ---------------------------------------------s
-9.My Account
+10.My Account
 .Profile
 .Settings
