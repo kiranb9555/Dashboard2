@@ -1,4 +1,9 @@
-html{
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
@@ -14,5 +19,5 @@ div{
     background :rgb(35,35,41);
    
 }
-
-.huntr-react-container-2{display: none;}
+.fa-arrow-right{color: rgb(201, 19, 19);}
+/*.huntr-react-container-2{display: none;}
