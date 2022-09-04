@@ -134,7 +134,7 @@ form input {
     padding: 8px 10px;
 }
 
-form input[type=submit]{
+form input[type=submit] {
     color: white;
     margin-top: 50px;
     border-radius: 2px;
@@ -148,6 +148,30 @@ form input[type=submit]{
 }
 
 .input-container {
-    width: 599px;
+    width: 100%;
     margin-top: 20px;
+}
+
+.unlimited_border {
+    width: 100%;
+    margin: 0 10px;
+    height: 20px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid black;
+    border-style: dashed;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+}
+
+.button-group input {
+    background-color: white!important;
+    color: black!important;
+    width: auto!important;
+    padding: 5px 20px!important;
+    margin: 5px;
+    border: 1px solid black!important;
 }
