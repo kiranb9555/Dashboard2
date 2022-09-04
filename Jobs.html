@@ -336,15 +336,12 @@
             dropdown[i].addEventListener("click", function () {
                 this.classList.toggle("active");
                 var dropdownContent = this.nextElementSibling;
-                // if (dropdownContent.style.display === "block") {
-                //     dropdownContent.style.display = "none";
-                // } else {
-                //     dropdownContent.style.display = "block";
-                // }
-                if (dropdownContent.style.height === "100px") {
+                var val = dropdownContent.innerHTML.split('</a>')?.length - 1;
+                var height = val * 30;
+                if (dropdownContent.style.height === `${height}px`) {
                     dropdownContent.style.height = "0px";
                 } else {
-                    dropdownContent.style.height = "100px";
+                    dropdownContent.style.height = `${height}px`;
                 }
             });
         }

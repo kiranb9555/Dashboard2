@@ -32,7 +32,7 @@
 
                 <li>
                     <div tabindex="0" class="icon-Products dropdown-btn">
-                        <a href="#">
+                        <a href="./Products.html">
                             <span class="me-2">
                                 <span class="material-icons other-icon" style="font-size: 15px;text-align: center;">
                                     inventory_2</span>
@@ -41,7 +41,7 @@
                     </div>
                     <ul class="dropdown-container">
                         <a href="./Category.html" id="sublist-item"><span style="font-size:20px;">&#8226;</span>&nbsp;&nbsp;&nbsp;Category</a>
-                        <a href="#" id="sublist-item"><span
+                        <a href="./Supplier.html" id="sublist-item"><span
                                 style="font-size:20px;">&#8226;</span>&nbsp;&nbsp;&nbsp;Supplier</a>
                     </ul>
                 </li>
@@ -72,9 +72,9 @@
                         </a>
                     </div>
                     <ul class="dropdown-container">
-                        <a id="sublist-item"><span style="font-size:20px;">&#8226;</span>&nbsp;&nbsp;&nbsp;Retail</a>
-                        <a id="sublist-item"><span style="font-size:20px;">&#8226;</span>&nbsp;&nbsp;&nbsp;Dealer</a>
-                        <a id="sublist-item"><span style="font-size:20px;">&#8226;</span>&nbsp;&nbsp;&nbsp;Enquiry</a>
+                        <a href="./Retail.html" id="sublist-item"><span style="font-size:20px;">&#8226;</span>&nbsp;&nbsp;&nbsp;Retail</a>
+                        <a href="./Dealer.html" id="sublist-item"><span style="font-size:20px;">&#8226;</span>&nbsp;&nbsp;&nbsp;Dealer</a>
+                        <a href="./Enquiry.html" id="sublist-item"><span style="font-size:20px;">&#8226;</span>&nbsp;&nbsp;&nbsp;Enquiry</a>
                     </ul>
                 </li>
 
@@ -96,7 +96,7 @@
                 <li tabindex="0" class="icon-Employees"><span>
                         <span class="material-icons me-2 other-icon" style="font-size: 15px;text-align: center;">
                             badge</span>
-                        <a href="Employee.html"><span class="hover-class">Delivery</span></a>
+                        <a href="./Delivery.html"><span class="hover-class">Delivery</span></a>
                     </span>
                 </li>
 
@@ -125,12 +125,10 @@
                         </a>
                     </div>
                     <ul class="dropdown-container">
-                        <a id="sublist-item"><span
-                                style="font-size:20px;">&#8226;</span>&nbsp;&nbsp;&nbsp;Attendance</a>
-                        <a id="sublist-item"><span style="font-size:20px;">&#8226;</span>&nbsp;&nbsp;&nbsp;Salary</a>
-                        <a id="sublist-item"><span style="font-size:20px;">&#8226;</span>&nbsp;&nbsp;&nbsp;Sales</a>
-                        <a id="sublist-item"><span
-                                style="font-size:20px;">&#8226;</span>&nbsp;&nbsp;&nbsp;Transaction</a>
+                        <a href="./Attendance.html" id="sublist-item"><span style="font-size:20px;">&#8226;</span>&nbsp;&nbsp;&nbsp;Attendance</a>
+                        <a href="./Salary.html" id="sublist-item"><span style="font-size:20px;">&#8226;</span>&nbsp;&nbsp;&nbsp;Salary</a>
+                        <a href="./Sales.html" id="sublist-item"><span style="font-size:20px;">&#8226;</span>&nbsp;&nbsp;&nbsp;Sales</a>
+                        <a href="./Transaction.html" id="sublist-item"><span style="font-size:20px;">&#8226;</span>&nbsp;&nbsp;&nbsp;Transaction</a>
                     </ul>
                 </li>
 
@@ -145,7 +143,7 @@
                     </div>
                     <ul class="dropdown-container">
                         <a href="./Profile.html" id="sublist-item"><span style="font-size:20px;">&#8226;</span>&nbsp;&nbsp;&nbsp;Profile</a>
-                        <a id="sublist-item"><span style="font-size:20px;">&#8226;</span>&nbsp;&nbsp;&nbsp;Settings</a>
+                        <a href="./Setting.html" id="sublist-item"><span style="font-size:20px;">&#8226;</span>&nbsp;&nbsp;&nbsp;Settings</a>
                     </ul>
                 </li>
             </ul>
@@ -215,10 +213,12 @@
             dropdown[i].addEventListener("click", function () {
                 this.classList.toggle("active");
                 var dropdownContent = this.nextElementSibling;
-                if (dropdownContent.style.height === "100px") {
+                var val = dropdownContent.innerHTML.split('</a>')?.length - 1;
+                var height = val * 30;
+                if (dropdownContent.style.height === `${height}px`) {
                     dropdownContent.style.height = "0px";
                 } else {
-                    dropdownContent.style.height = "100px";
+                    dropdownContent.style.height = `${height}px`;
                 }
             });
         }
