@@ -108,6 +108,16 @@ th {
   text-align: center;
 }
 
+.menu::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.menu {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 .avatar {
   background-color: #202125;
   margin: 0px 0px 50px 0px;
@@ -203,11 +213,22 @@ ul li {
 }
 
 .dropdown-container {
+  /* background-color: red; */
   /* display: none; */
   overflow: scroll;
   transition: 0.3s;
   height: 0px;
   margin-left: -10px;
+}
+
+.dropdown-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.dropdown-container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 .dropdown-container a {
