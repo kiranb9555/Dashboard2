@@ -173,7 +173,7 @@ ul {
 ul li {
   transition: 0.3s;
   padding: 0 2rem;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   cursor: pointer;
   list-style: none;
   text-align: left;
@@ -468,6 +468,7 @@ ul li:hover .hover-class {
 }
 
 .main-header {
+  box-shadow: 0px 9px 14px 2px #38455d99;
   background-color: #38455d;
   height: 70px;
 
