@@ -26,6 +26,15 @@ a:hover {
   background-color: red;
 } */
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: rgb(99, 99, 99);
+  font-size: 25px;
+}
+
+
 .second-nav {
   display: flex;
   flex-direction: row;
@@ -404,4 +413,10 @@ ul li:hover .hover-class {
 .modal-container{
   background-color: white;
   width: 40%;
+}
+
+.main-header {
+  background-color: #02a8b5;
+  height: 70px;
+
 }
