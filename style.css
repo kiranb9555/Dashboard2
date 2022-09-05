@@ -122,7 +122,7 @@ th {
 .menu {
   background-color: #3f4d67!important;
   text-align: center;
-  width: 370px!important;
+  width: 370px;
 }
 
 /* width */
@@ -152,18 +152,19 @@ th {
 .avatar {
   background-color: rgba(0,0,0,0.1);
   margin: 0px 0px 50px 0px;
-  padding: 20px 2rem;
+  padding: 20px 2rem!important;
   display: flex;
+  cursor: pointer;
   justify-content: space-between;
 }
 
-.avatar img {
+/* .avatar img {
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-}
+} */
 
 ul {
   padding: 0!important;
