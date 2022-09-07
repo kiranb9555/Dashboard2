@@ -27,7 +27,7 @@
 
 <body>
     <div class="d-flex">
-        <nav class="menu" style="height: 100vh; overflow: scroll;" tabindex="0">
+        <nav class="menu" style="height: 100vh; overflow: scroll; transition: 0.3s;" tabindex="0">
             <div class="smartphone-menu-trigger"></div>
             <header class="avatar">
                 <div></div>
@@ -227,14 +227,25 @@
         function toggleBar() {
             let data = document.getElementsByTagName('li');
             let menu = document.getElementsByClassName('menu');
-            menu[0].style.width = "100px";
-            var i;
-            
-            for (i = 0; i < data.length; i++) {
-                let innerData = data[i].innerHTML.replace('<span class="hover-class">', '<span class="hover-class" style="display: none">')
-                data[i].innerHTML = innerData
-                let newItem = data[i].innerHTML.replace('<i class="bi bi-chevron-right" style="color: #009688;"></i>', '<i class="bi bi-chevron-right" style="color: #009688; display: none"></i>')
-                data[i].innerHTML = newItem
+            console.log('width', menu[0].style.width === '');
+            if (menu[0].style.width === "100px") {
+                var i;
+                menu[0].style.width = "370px";
+                for (i = 0; i < data.length; i++) {
+                    let innerData = data[i].innerHTML.replace('<span class="hover-class" style="display: none">', '<span class="hover-class">')
+                    data[i].innerHTML = innerData
+                    let newItem = data[i].innerHTML.replace('<i class="bi bi-chevron-right" style="color: #009688; display: none"></i>', '<i class="bi bi-chevron-right" style="color: #009688;"></i>')
+                    data[i].innerHTML = newItem
+                }
+            } else {
+                var i;
+                menu[0].style.width = "100px";
+                for (i = 0; i < data.length; i++) {
+                    let innerData = data[i].innerHTML.replace('<span class="hover-class">', '<span class="hover-class" style="display: none">')
+                    data[i].innerHTML = innerData
+                    let newItem = data[i].innerHTML.replace('<i class="bi bi-chevron-right" style="color: #009688;"></i>', '<i class="bi bi-chevron-right" style="color: #009688; display: none"></i>')
+                    data[i].innerHTML = newItem
+                }
             }
         }
 
